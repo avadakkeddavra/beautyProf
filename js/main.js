@@ -28,3 +28,17 @@ $(document).ready(function(){
 $(document).ready(function(){
      $('div#panoram').paver()
 })
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var top = $(this).scrollTop();
+        console.log(top);
+        if(top != 0){            
+            $('.menu-row').addClass('active-menu-row')
+                          
+        }
+        else{
+            $('.menu-row').removeClass('active-menu-row');
+
+        }
+    })
+})
